@@ -1,0 +1,21 @@
+[package]
+name = "ternary-spatial"
+version = "0.1.0"
+edition = "2021"
+description = "Spatial math combining Pythagorean48 zero-drift direction encoding and Eisenstein hexagonal (A₂) lattice quantization"
+license = "MIT"
+keywords = ["pythagorean48", "eisenstein", "hexagonal", "lattice", "spatial", "ternary"]
+categories = ["mathematics", "science", "embedded"]
+
+[dependencies]
+eisenstein-quantize = { path = "../eisenstein-quantize" }
+num-rational = "0.4"
+num-traits = "0.2"
+rand = "0.8"
+
+[dev-dependencies]
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
