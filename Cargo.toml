@@ -10,6 +10,7 @@ categories = ["mathematics", "science", "embedded"]
 [dependencies]
 eisenstein-quantize = { path = "../eisenstein-quantize" }
 num-rational = "0.4"
+num-bigint = "0.4"
 num-traits = "0.2"
 rand = "0.8"
 
