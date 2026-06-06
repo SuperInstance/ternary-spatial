@@ -8,6 +8,7 @@ keywords = ["pythagorean48", "eisenstein", "hexagonal", "lattice", "spatial", "t
 categories = ["mathematics", "science", "embedded"]
 
 [dependencies]
+ternary-types = { git = "https://github.com/SuperInstance/ternary-types.git", features = ["std"] }
 eisenstein-quantize = { path = "../eisenstein-quantize" }
 num-rational = "0.4"
 num-bigint = "0.4"
